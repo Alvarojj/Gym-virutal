@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {VistaSeleccionarEntrenadorComponent} from './Componentes/vista-seleccionar-entrenador/vista-seleccionar-entrenador.component'
+import {VistaSeleccionarEntrenadorComponent} from './componentes/vista-seleccionar-entrenador/vista-seleccionar-entrenador.component'
 import {InicioComponent} from './componentes/principal/inicio/inicio.component'
 
 const routes: Routes = [
