@@ -1,16 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {VistaSeleccionarEntrenadorComponent} from './componentes/vista-seleccionar-entrenador/vista-seleccionar-entrenador.component'
+import {VistaEntrenadoresComponent} from './componentes/vista-entrenadores/vista-entrenadores.component'
 import {InicioComponent} from './componentes/principal/inicio/inicio.component'
+import {PerfilComponent} from './componentes/principal/perfil/perfil.component'
 
 const routes: Routes = [
   {
-    path: 'VistaSeleccionarEntrenador',
-    component: VistaSeleccionarEntrenadorComponent
+    path: 'entrenadores',
+    component: VistaEntrenadoresComponent
   },
   {
     path: 'Inicio',
     component: InicioComponent
+  },
+  {
+    path: 'perfil',
+    component: PerfilComponent
   }
 ];
 
