@@ -1,0 +1,15 @@
+.btn-primary{
+    background-color: #7C3213;
+    border: none;
+    border-radius: 60px;
+    padding: 10px 40px;
+    font-size: 30px;
+}
+
+h2{
+    margin-bottom: 50px;
+}
+.btn-div{
+    text-align: center;
+    margin-top: 50px;
+}
