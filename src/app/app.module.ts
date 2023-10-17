@@ -8,6 +8,7 @@ import { InicioComponent } from './componentes/principal/inicio/inicio.component
 import { VistaEntrenadoresComponent } from './componentes/vista-entrenadores/vista-entrenadores.component';
 import { PerfilComponent } from './componentes/principal/perfil/perfil.component';
 import { RutinaComponent } from './componentes/principal/rutina/rutina.component';
+import { LoginComponent } from './componentes/login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RutinaComponent } from './componentes/principal/rutina/rutina.component
     InicioComponent,
     VistaEntrenadoresComponent,
     PerfilComponent,
-    RutinaComponent
+    RutinaComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
