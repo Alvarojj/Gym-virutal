@@ -5,6 +5,8 @@ import {InicioComponent} from './componentes/principal/inicio/inicio.component'
 import {PerfilComponent} from './componentes/principal/perfil/perfil.component'
 import { RutinaComponent } from "./componentes/principal/rutina/rutina.component";
 import { SeleccionaPlanComponent } from './componentes/selecciona-plan/selecciona-plan.component';
+import { LoginComponent } from './componentes/login/login.component';
+import {CrearCuentaComponent} from './componentes/crear-cuenta/crear-cuenta.component';
 
 const routes: Routes = [
   {
@@ -26,6 +28,20 @@ const routes: Routes = [
   {
     path: 'rutina',
     component: RutinaComponent
+  },
+  {
+    path:'login',
+    component: LoginComponent,
+    
+  },
+  {
+    path:'',
+    component: LoginComponent,
+    
+  },
+  {
+    path:'crearcuenta',
+    component: CrearCuentaComponent
   }
 ];
 

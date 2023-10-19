@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+.img{
+    margin-right: 30px;
+}
+.img img{ 
+    width: 500px;
+    height: 500px;
+}
+.inicio{
+    font-size: 30px;
+}
+.segunda{
+    font-size: 90px;
+    font-family: 'Kavoon', serif;
+}
+.d-flex{
+    width: 80%;
+}
+.btn-primary{
+    background-color: #7C3213;
+    border: none;
+    border-radius: 35px;
+    padding: 30px;
+    font-size: 20px;
+}
