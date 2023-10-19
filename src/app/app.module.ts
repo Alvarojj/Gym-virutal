@@ -9,6 +9,7 @@ import { VistaEntrenadoresComponent } from './componentes/vista-entrenadores/vis
 import { PerfilComponent } from './componentes/principal/perfil/perfil.component';
 import { RutinaComponent } from './componentes/principal/rutina/rutina.component';
 import { LoginComponent } from './componentes/login/login.component';
+import { CrearCuentaComponent } from './componentes/crear-cuenta/crear-cuenta.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LoginComponent } from './componentes/login/login.component';
     VistaEntrenadoresComponent,
     PerfilComponent,
     RutinaComponent,
-    LoginComponent
+    LoginComponent,
+    CrearCuentaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container .formulario .titulo h1{
+    text-align: center;
+    color: #7c3213;
+    margin-top: 30px;
+    cursor: default;
+}
+
+
+.container{
+    
+    display: flex;
+    margin-left: 50px;
+    min-height: 100vh;
+}
+
+
+
+.container .formulario{
+    
+    background-color: white;
+    width: 90%;
+    max-width: 400px;
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 1px solid #7c3213;
+    box-shadow: 0 5px 10px -5px rgb(#7c3213 / 30%);
+    max-height: 750px;
+    
+    
+}
+
+.container .formulario .boton a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid #7c3213;
+    background-color: #7c3213;
+    margin-left: 65px;
+}
+
+.container .imagen img{
+    width: 600px;
+    height: 750px;
+    border-radius: 10px;
+}
+
+.container .formulario .preguntas{
+    display: flex;
+}
+
+.container .formulario .preguntas .pregunta1{
+    margin-top: 1px;
+    display: grid;
+    gap: 2.5em;
+    
+}
+
+.container .formulario .preguntas .pregunta2{
+    margin-top: 1px;
+    display: grid;
+    gap: 2.5em;
+    margin-left:10px;
+}
+
+.container .formulario .preguntas .pregunta1 textarea{
+    resize: none;
+    border: 1px solid #7c3213;
+    border-radius: 4px;
+}
+
+.container .formulario .preguntas input{
+    border: 1px solid #7c3213;
+    border-radius: 4px;
+}
