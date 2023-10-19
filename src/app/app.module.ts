@@ -8,8 +8,10 @@ import { InicioComponent } from './componentes/principal/inicio/inicio.component
 import { VistaEntrenadoresComponent } from './componentes/vista-entrenadores/vista-entrenadores.component';
 import { PerfilComponent } from './componentes/principal/perfil/perfil.component';
 import { RutinaComponent } from './componentes/principal/rutina/rutina.component';
+import { SeleccionaPlanComponent } from './componentes/selecciona-plan/selecciona-plan.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { CrearCuentaComponent } from './componentes/crear-cuenta/crear-cuenta.component';
+
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { CrearCuentaComponent } from './componentes/crear-cuenta/crear-cuenta.co
     VistaEntrenadoresComponent,
     PerfilComponent,
     RutinaComponent,
+    SeleccionaPlanComponent,
     LoginComponent,
     CrearCuentaComponent
   ],

@@ -4,10 +4,15 @@ import {VistaEntrenadoresComponent} from './componentes/vista-entrenadores/vista
 import {InicioComponent} from './componentes/principal/inicio/inicio.component'
 import {PerfilComponent} from './componentes/principal/perfil/perfil.component'
 import { RutinaComponent } from "./componentes/principal/rutina/rutina.component";
+import { SeleccionaPlanComponent } from './componentes/selecciona-plan/selecciona-plan.component';
 import { LoginComponent } from './componentes/login/login.component';
 import {CrearCuentaComponent} from './componentes/crear-cuenta/crear-cuenta.component';
 
 const routes: Routes = [
+  {
+    path: 'Selecciona_plan',
+    component: SeleccionaPlanComponent
+  },
   {
     path: 'entrenadores',
     component: VistaEntrenadoresComponent
