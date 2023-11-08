@@ -11,6 +11,7 @@ import { RutinaComponent } from './componentes/principal/rutina/rutina.component
 import { SeleccionaPlanComponent } from './componentes/selecciona-plan/selecciona-plan.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { CrearCuentaComponent } from './componentes/crear-cuenta/crear-cuenta.component';
+import { LoginEntrenadoresComponent } from './componentes/entrenadores/login-entrenadores/login-entrenadores.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { CrearCuentaComponent } from './componentes/crear-cuenta/crear-cuenta.co
     RutinaComponent,
     SeleccionaPlanComponent,
     LoginComponent,
-    CrearCuentaComponent
+    CrearCuentaComponent,
+    LoginEntrenadoresComponent
   ],
   imports: [
     BrowserModule,
