@@ -14,6 +14,7 @@ import { CrearCuentaComponent } from './componentes/crear-cuenta/crear-cuenta.co
 import { InicioEntrenadoresComponent } from './componentes/entrenadores/inicio-entrenadores/inicio-entrenadores.component';
 import { LoginEntrenadoresComponent } from './componestes/entrenadores/login-entrenadores/login-entrenadores.component';
 import { Menu2Component } from './componentes/entrenadores/menu2/menu2.component';
+import { LoginEntrenadoresComponent } from './componentes/entrenadores/login-entrenadores/login-entrenadores.component';
 
 
 @NgModule({
@@ -27,9 +28,11 @@ import { Menu2Component } from './componentes/entrenadores/menu2/menu2.component
     SeleccionaPlanComponent,
     LoginComponent,
     CrearCuentaComponent,
+    Inicio_entrenadores,
     InicioEntrenadoresComponent,
     LoginEntrenadoresComponent,
-    Menu2Component
+    Menu2Component,
+    LoginEntrenadoresComponent
   ],
   imports: [
     BrowserModule,
