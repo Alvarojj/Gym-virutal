@@ -11,6 +11,9 @@ import { RutinaComponent } from './componentes/principal/rutina/rutina.component
 import { SeleccionaPlanComponent } from './componentes/selecciona-plan/selecciona-plan.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { CrearCuentaComponent } from './componentes/crear-cuenta/crear-cuenta.component';
+import { InicioEntrenadoresComponent } from './componentes/entrenadores/inicio-entrenadores/inicio-entrenadores.component';
+import { LoginEntrenadoresComponent } from './componestes/entrenadores/login-entrenadores/login-entrenadores.component';
+import { Menu2Component } from './componentes/entrenadores/menu2/menu2.component';
 import { LoginEntrenadoresComponent } from './componentes/entrenadores/login-entrenadores/login-entrenadores.component';
 
 
@@ -25,6 +28,10 @@ import { LoginEntrenadoresComponent } from './componentes/entrenadores/login-ent
     SeleccionaPlanComponent,
     LoginComponent,
     CrearCuentaComponent,
+    Inicio_entrenadores,
+    InicioEntrenadoresComponent,
+    LoginEntrenadoresComponent,
+    Menu2Component,
     LoginEntrenadoresComponent
   ],
   imports: [
