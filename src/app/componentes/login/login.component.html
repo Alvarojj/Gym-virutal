@@ -9,9 +9,9 @@
     <div class="form">
         <h4>Sing in</h4>
         <div class="login">
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password">
-            <button routerLink="/Inicio">Sign In</button>
+            <input type="text" [(ngModel)] = "correo" placeholder="Username" required="required">
+            <input type="password" [(ngModel)]="clave" placeholder="Password" required="required">
+            <button (click)="iniarSeccion()" >Sign In</button>
         </div>
         <div class="suggests">
             <span routerLink="/crearcuenta">Registrarse</span>
