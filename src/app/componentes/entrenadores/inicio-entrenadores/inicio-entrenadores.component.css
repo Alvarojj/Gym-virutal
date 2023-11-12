@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+body {
+    background-image: url(img2.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+ 
+    border-radius: 10px;
+    margin-left: 100px;
+    background-color: #ded4d974;
+}
+.img{
+    margin-right: 30px;
+}
+.img img{ 
+    width: 400px;
+    height: 400px;
+}
+.inicio{
+    font-size: 30px;
+}
+.segunda{
+    text-align: center;
+    font-size: 90px;
+    font-family: 'Kavoon', serif;
+}
+.d-flex{
+    width: 80%;
+}
+.btn-primary{
+    background-color: #7C3213;
+    border: none;
+    border-radius: 35px;
+    padding: 30px;
+    font-size: 20px;
+}

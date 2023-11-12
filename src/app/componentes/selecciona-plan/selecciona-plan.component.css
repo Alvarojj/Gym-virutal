@@ -1,155 +1,97 @@
-.sub-title{
-    margin-top: 30px;
-    font-weight: 600;
-    color: chocolate;
-    margin-bottom: 55px;
+body{
+    background-color: #d8f4f4c7;
+    height: 100vh; /* 100% de la altura de la ventana */
+    width: 100%; 
+
+}
+
+.sub-title {
+    margin-top: 20px;
+    font-weight: 900;
+    color: rgb(127, 39, 4);
+    margin-bottom: 180px;
     text-align: center;
 }
-.pp-section{
-    padding: 100px 0 85px;
 
-
-    
-}
-.section-header{
-    margin-bottom: 35px;
-}
-.plan-style{
-    margin: auto;
-    background-color: rgb(229, 221, 215);
-    position: relative;
-    border-radius: 30px;
-    transition: all .3s ease-in-out;
-
+.pp-section {
+    padding: 80px 0 85px;
 
 }
-.plan-style .bg-blue{
-    background: linear-gradient(to left, #bb7006, #d06a05);
+
+.section-header {
+    margin-bottom: 50px;
 }
-.plan-style .bg-blue-btn{
-    background: linear-gradient(to right, #0097e6, #0652DD,
-    #0652DD, #0097e6);
+
+.plan-style .bg-cafe {
+    background: linear-gradient(to left, #ddaf81, rgb(96, 33, 4) 47, 6);
+}
+
+.plan-style .bg-cafe-btn {
+    background: linear-gradient(to right, #882507, #6f2804,
+            #bb5b01, #fe8c00);
     background-size: 300% 100%;
 }
-.plan-style .bg-blue-btn:hover{
+
+.plan-style .bg-cafe-btn:hover {
     background-position: 100% 0;
-    color: #fff;
+    color: #0ea992;
     box-shadow: 0px 20px 20px #eee;
     transition: all .3s ease-in-out;
-    
- 
-}
-.plan-style .bg-orange{
-    background: linear-gradient(to left, #fe8c00, #f83600);
-}
-.plan-style .bg-blue-btn{
-    background: linear-gradient(to right,#fe8c00, #f83600,
-    #f83600, #fe8c00);
-    background-size: 300% 100%;
-}
-.plan-style .bg-blue-btn:hover{
-    background-position: 100% 0;
-    color: #fff;
-    box-shadow: 0px 20px 20px #eee;
-    transition: all .3s ease-in-out;
-    
- 
-}
-
-.plan-style .bg-cafe{
-    background: linear-gradient(to left, #ddaf81, #bb5b01);
-}
-.plan-style .bg-cafe-btn{
-    background: linear-gradient(to right,#ddaf81, #bb5b01,
-    #bb5b01, #fe8c00);
-    background-size: 300% 100%;
-}
-.plan-style .bg-cafe-btn:hover{
-    background-position: 100% 0;
-    color: #fff;
-    box-shadow: 0px 20px 20px #eee;
-    transition: all .3s ease-in-out;
-    
- 
-}
-
-
-.plan-style-bg{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius:30px ;
 
 }
-.plan-style .plan-header{
+
+.plan-style .plan-header {
     padding: 30px 0 20px 0;
     z-index: 1;
     position: relative;
 }
-.plan-style .plan-header h3{
-    width: 60%;
-    padding: 0px 12px;
-    margin: -50px auto 0;
-    border-radius: 40px;
-    line-height: 40px;
-    font-size: 20px;
-    font-weight: 400;
-    color: #fff;
-    text-transform: capitalize;
 
-  
+.plan-style .plan-header h3 {
+    margin-bottom: 50px;
+    padding: 0px 140px;
+    margin: -50px auto 0;
+
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #080707;
+    text-transform: capitalize;
 }
-.plan-style .plan-header .price{
-    width: 130px;
-    margin: 30px auto -2px;
+
+.plan-style .plan-header .price {
+    width: 300px;
+    margin: 30px auto -50px;
     border-radius: 5px;
     display: flex;
-    color: #fff;
+    color: #060404;
     align-items: center;
     justify-content: center;
     background-repeat: no-repeat;
     transition: all .3s ease-in-out;
-    
-  
 }
-.plan-style .plan-header .price .price-digit{
-  font-size: 35px;
-  font-weight: 900;
 
-    
-  
+.plan-style .plan-header .price .price-digit {
+    font-size: 40px;
+    font-weight: 900;
 }
-.plan-style .plan-detail{
-    z-index: 1;
-    position: relative;
 
-}
-.plan-style .plan-detail ul{
-    padding: 0;
-    list-style: none;
-    color: #656464;
 
-    
-}
-.plan-style .plan-detail ul li{
-  padding: 5px 0;
-}
-.plan-style .plan-bottom{
-    margin: 5px;
+.plan-style .plan-bottom {
+    margin: 40px;
     padding: 12px 0 32px 0;
     position: relative;
     overflow: hidden;
     color: #000;
     text-align: center;
 
-  }
-  .plan-style .plan-buttom{
+
+}
+
+.plan-style .plan-buttom {
     padding: 10px 18px;
-    font-size: 14px;
+    font-size: 20px;
     color: #fff;
-    border: 1px solid #111;
+    border: 1px solid #d50909;
     border: none;
     border-radius: 40px;
     background-repeat: no-repeat;
@@ -159,18 +101,5 @@
     text-align: center;
 
 
-  }
-.plan-style.blue-shadow{
-  border:2px solid #bb5b01 ;  
-
-
 }
-.plan-style.blue-shadow:hover{
-    box-shadow: 0px 0px 30px -1px #e18104;
-    
-  }
-  .plan-style.active{
-    box-shadow: 0pz 0px 30px -10px #e18104;
-    
-  }
   

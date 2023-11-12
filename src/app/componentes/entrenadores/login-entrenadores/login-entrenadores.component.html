@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,16 +8,14 @@
 </head>
 <body>
     <div class="form">
-        <h4>Sing in</h4>
+        <h4>Login Personal Trainer</h4>
         <div class="login">
-            <input type="text" [(ngModel)] = "correo" placeholder="Email" required="required">
-            <input type="password" [(ngModel)]="clave" placeholder="Password" required="required">
-            <button (click)="iniarSeccion()" >Sign In</button>
+            <input type="text" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button routerLink="/Inicio">Sign In</button>
         </div>
         <div class="suggests">
             <span routerLink="/crearcuenta">Registrarse</span>
         </div>
     </div>
 </body>
-</html>
-
