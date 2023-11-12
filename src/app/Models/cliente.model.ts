@@ -5,7 +5,6 @@ export interface cliente {
     entrenador?: entrenador
 }
 
-
 interface persona{
     idPersona?: number,
     nombre?: string,
@@ -19,7 +18,7 @@ interface persona{
 }
 
 
-interface membresia{
+export interface membresia{
     idMembresia?: number,
     titulo?: string, 
     costo?: number,
@@ -28,7 +27,7 @@ interface membresia{
 }
 
 
-interface entrenador{ 
+export interface entrenador{ 
     idEntrenador?: number,
     idPersona?: persona
 }

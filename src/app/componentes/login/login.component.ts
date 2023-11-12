@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { cliente } from 'src/app/Models/cliente.model';
 import { ClientesService } from 'src/app/services/clientes.service';
 
 @Component({
@@ -16,9 +17,10 @@ export class LoginComponent implements OnInit{
 
   correo?: string;
   clave?: string;
-
+  cliente?: cliente;
+  perfil?:number;
   iniarSeccion(){
-    let cliente = null
+    
     let clien =     {
       "idPersona": {
           "correo": this.correo,
@@ -27,12 +29,20 @@ export class LoginComponent implements OnInit{
     }
     this.clienteService.getClientes(clien)
     .subscribe(resp => {
-      cliente = resp
-      if(cliente == null){
+      this.cliente = resp
+      this.perfil = resp.idCliente
+
+      if(this.cliente == null){
         alert('Usuario o clave incorrecto')
-      }else if(cliente != null){
+      }
+      else if(this.cliente != null){
           this.router.navigate(['/Inicio']) 
         }
+        localStorage.setItem('id', JSON.stringify(this.perfil));
     })
+
+
+
   }
+
 }

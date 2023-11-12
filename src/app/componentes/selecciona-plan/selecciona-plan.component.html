@@ -1,83 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selecciona_plan</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-     rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Selecciona_plan</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
-    <section class="pp-section"> 
-    <div class="container">
-        <div class="row">
-          <div class="col-12">
-             <div class="section-header text-conter">
-                <h2 class="sub-title" >SELECCIONA TU PLAN DE SUBCRIPCION </h2>
+   <section class="pp-section">
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <div class="section-header text-conter">
+                  <h2 class="sub-title">SELECCIONA TU PLAN DE SUBCRIPCION </h2>
 
-             </div>
-          </div> 
-
-        </div> 
-      <div class="row plan-table ">
-
-         <div class="col-lg-4 col-md6 ">
-         <div class="plan-style blue-shadow">
-            <div class="plan-style-bg blue-bg-img"></div>
-            <div class="plan-header"> 
-                <h3 class="bg-blue"> SEMANAL</h3>
-                <P class="price bg-blue"> $  <span 
-                   class="price-digit">25,900</span>/1sem</P>
+               </div>
             </div>
-            <div class="plan-detail">
-            <ul>
-               
-            </ul>
+
          </div>
-          <div class="plan-bottom">
-            <a href="" class="plan-buttom bg-cafe-btn">Suscribete</a>
-        </div>
-        </div>
-        </div>
-        <div class="col-lg-4 col-md-6 ">
-            <div class="plan-style blue-shadow active">
-               <div class="plan-style-bg blue-bg-imh"></div>
-               <div class="plan-header"> 
-                   <h3 class="bg-blue">MENSUAL</h3>
-                   <P class="price bg-blue"> $  <span 
-                      class="price-digit">79,990</span>/1 MES</P>
+         <div class="row plan-table " >
+
+            <div class="col-lg-4 col-md6 " *ngFor="let membresia of membresias">
+               <div class="plan-style blue-shadow">
+                  <div class="plan-style-bg blue-bg-img"></div>
+                  <div class="plan-header">
+                     <h3 class="bg-blue"> {{membresia.titulo}}</h3>
+                     <P class="price bg-blue"> $ <span class="price-digit">{{membresia.costo}}</span>/{{membresia.tiempoDias}}Dias</P>
+                  </div>
+                  <div class="plan-detail">
+                     <ul>
+
+                     </ul>
+                  </div>
+                  <div class="plan-bottom">
+                     <a href="" class="plan-buttom bg-cafe-btn">Suscribete</a>
+                  </div>
                </div>
-               <div class="plan-detail">
-               <ul>
-                   
-               </ul>
             </div>
-             <div class="plan-bottom">
-               <a href="" class="plan-buttom bg-cafe-btn">Suscribete</a>
-           </div>
-           </div>
-           </div>
-           <div class="col-lg-4 col-md-6 ">
-            <div class="plan-style blue-shadow">
-               <div class="plan-style-bg blue-bg-imh"></div>
-               <div class="plan-header"> 
-                   <h3  class="bg-blue"> ANUAL</h3>
-                   <P class="price bg-blue"> $  <span 
-                      class="price-digit">800,990</span>/1AÑO</P>
-               </div>
-               <div class="plan-detail">
-               <ul>
-                  
-               </ul>
-            </div>
-             <div class="plan-bottom">
-               <a href="" class="plan-buttom bg-cafe-btn">Suscribete</a>
-           </div>
-           </div>
-           </div>
-    </div>
-    </div>    
-    
-    </section>
+         </div>
+      </div>
+
+   </section>
 </body>
+
 </html>
