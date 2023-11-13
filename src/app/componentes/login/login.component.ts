@@ -10,7 +10,6 @@ import { ClientesService } from 'src/app/services/clientes.service';
 })
 export class LoginComponent implements OnInit{
   constructor(private clienteService: ClientesService, private router: Router ){
-
   }
 
   ngOnInit(): void{  }
@@ -30,15 +29,16 @@ export class LoginComponent implements OnInit{
     this.clienteService.getClientes(clien)
     .subscribe(resp => {
       this.cliente = resp
-      this.perfil = resp.idCliente
 
       if(this.cliente == null){
         alert('Usuario o clave incorrecto')
       }
       else if(this.cliente != null){
+          this.perfil = resp.idCliente
+          localStorage.setItem('id', JSON.stringify(this.perfil));
           this.router.navigate(['/Inicio']) 
         }
-        localStorage.setItem('id', JSON.stringify(this.perfil));
+        
     })
 
 

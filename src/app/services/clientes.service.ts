@@ -32,4 +32,12 @@ export class ClientesService {
     return this.httpClient.get<membresia[]>(url)
 
   }
+
+
+  guardarCliente(cliente:cliente):Observable<cliente>{
+    const url = this.url+ 'cliente';
+    return this.httpClient.post<cliente>(url,cliente)
+  }
+
+
 }
