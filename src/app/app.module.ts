@@ -12,7 +12,17 @@ import { RutinaComponent } from './componentes/principal/rutina/rutina.component
 import { SeleccionaPlanComponent } from './componentes/selecciona-plan/selecciona-plan.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { CrearCuentaComponent } from './componentes/crear-cuenta/crear-cuenta.component';
+import { CrearEntrenamientoComponent } from './componentes/entrenadores/crear-entrenamiento/crear-entrenamiento.component';
+import { Menu2Component } from './componentes/entrenadores/menu2/menu2.component';
+import { PerfilEntrenadorComponent } from './componentes/entrenadores/perfil-entrenador/perfil-entrenador.component';
+import { SeleccionaUsuarioComponent } from './componentes/entrenadores/selecciona-usuario/selecciona-usuario.component';
+import { SeleccionaVideoComponent } from './componentes/entrenadores/selecciona-video/selecciona-video.component';
+import { InicioEntrenadoresComponent } from './componentes/entrenadores/inicio-entrenadores/inicio-entrenadores.component';
+import { LoginEntrenadoresComponent } from './componentes/entrenadores/login-entrenadores/login-entrenadores.component';
+import { RegistrarEntrenadorComponent } from './componentes/entrenadores/registrar-entrenador/registrar-entrenador.component';
+
 import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +34,15 @@ import { FormsModule } from '@angular/forms';
     RutinaComponent,
     SeleccionaPlanComponent,
     LoginComponent,
-    CrearCuentaComponent
+    CrearCuentaComponent,
+    CrearEntrenamientoComponent,
+    Menu2Component,
+    PerfilEntrenadorComponent,
+    SeleccionaUsuarioComponent,
+    SeleccionaVideoComponent,
+    InicioEntrenadoresComponent,
+    LoginEntrenadoresComponent,
+    RegistrarEntrenadorComponent
   ],
   imports: [
     BrowserModule,
