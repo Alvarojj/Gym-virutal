@@ -16,6 +16,9 @@ import { Menu2Component } from './componentes/entrenadores/menu2/menu2.component
 import { PerfilEntrenadorComponent } from './componentes/entrenadores/perfil-entrenador/perfil-entrenador.component';
 import { SeleccionaUsuarioComponent } from './componentes/entrenadores/selecciona-usuario/selecciona-usuario.component';
 import { SeleccionaVideoComponent } from './componentes/entrenadores/selecciona-video/selecciona-video.component';
+import { InicioEntrenadoresComponent } from './componentes/entrenadores/inicio-entrenadores/inicio-entrenadores.component';
+import { LoginEntrenadoresComponent } from './componentes/entrenadores/login-entrenadores/login-entrenadores.component';
+import { RegistrarEntrenadorComponent } from './componentes/entrenadores/registrar-entrenador/registrar-entrenador.component';
 
 
 @NgModule({
@@ -33,7 +36,10 @@ import { SeleccionaVideoComponent } from './componentes/entrenadores/selecciona-
     Menu2Component,
     PerfilEntrenadorComponent,
     SeleccionaUsuarioComponent,
-    SeleccionaVideoComponent
+    SeleccionaVideoComponent,
+    InicioEntrenadoresComponent,
+    LoginEntrenadoresComponent,
+    RegistrarEntrenadorComponent
   ],
   imports: [
     BrowserModule,

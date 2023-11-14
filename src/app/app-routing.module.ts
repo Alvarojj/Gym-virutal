@@ -11,6 +11,9 @@ import {SeleccionaUsuarioComponent} from './componentes/entrenadores/selecciona-
 import {PerfilEntrenadorComponent} from './componentes/entrenadores/perfil-entrenador/perfil-entrenador.component';
 import {CrearEntrenamientoComponent} from './componentes/entrenadores/crear-entrenamiento/crear-entrenamiento.component';
 import {SeleccionaVideoComponent} from './componentes/entrenadores/selecciona-video/selecciona-video.component';
+import { InicioEntrenadoresComponent } from './componentes/entrenadores/inicio-entrenadores/inicio-entrenadores.component';
+import { LoginEntrenadoresComponent } from './componentes/entrenadores/login-entrenadores/login-entrenadores.component';
+import { RegistrarEntrenadorComponent } from './componentes/entrenadores/registrar-entrenador/registrar-entrenador.component';
 
 const routes: Routes = [
   {
@@ -62,7 +65,19 @@ const routes: Routes = [
   {
     path:'crearcuenta',
     component: CrearCuentaComponent
+  },
+  {
+    path: 'inicio/entrenador',
+    component: InicioEntrenadoresComponent
+  },
+  {
+    path: 'login/entrenador',
+    component: LoginEntrenadoresComponent
+  },
+  {path:'registar/entrendor',
+   component: RegistrarEntrenadorComponent
   }
+
 ];
 
 @NgModule({
