@@ -2,9 +2,9 @@
     <div class="form">
         <h4>Login Personal Trainer</h4>
         <div class="login">
-            <input type="text" placeholder="Email">
-            <input type="password" placeholder="Password">
-            <button routerLink="/inicio/entrenador">Sign In</button>
+            <input type="text" placeholder="Email" [(ngModel)] = "correo">
+            <input type="password" placeholder="Password" [(ngModel)] = "clave">
+            <button (click)="iniciarSeccion()">Sign In</button>
         </div>
         <div class="suggests">
             <span routerLink="/registar/entrendor">Registrarse</span>

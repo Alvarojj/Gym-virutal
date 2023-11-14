@@ -39,5 +39,21 @@ export class ClientesService {
     return this.httpClient.post<cliente>(url,cliente)
   }
 
+  loginEntrendaor(entrenador:entrenador):Observable<entrenador>{
+    const url = this.url+ 'entrenador/login';
+    return this.httpClient.post<entrenador>(url,entrenador)
+  }
+
+  seccionEntrenador(entrenador:entrenador):Observable<entrenador>{
+    const url = this.url+ 'entrenador/seccion';
+    return this.httpClient.post<entrenador>(url,entrenador)
+    
+  }
+
+
+  crearEntrenador(entrenador:entrenador):Observable<entrenador>{
+    const url = this.url+ 'entrenador';
+    return this.httpClient.post<entrenador>(url,entrenador)
+  }
 
 }
