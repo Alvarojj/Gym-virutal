@@ -4,39 +4,27 @@
         <div>
             <img src="./../../../../assets/entrenador.webp" class="rounded-circle" alt="...">
         </div>
-        <a href="" class="change-foto">Cambiar foto</a>
+        <a class="change-foto">Cambiar foto</a>
     </div>
     <div class="infor">
         <div class="row g-2 align-items-center">
             <div class="col-auto label-info">
-                <label for="inputPassword6" class="col-form-label">Nombre:</label>
-            </div>
-            <div class="col-auto">
-                <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                <label for="inputPassword6" class="col-form-label">Nombre: {{cliente?.idPersona?.nombre}} {{cliente?.idPersona?.apellido}}</label>
             </div>
         </div>
         <div class="row g-2 align-items-center">
             <div class="col-auto label-info">
-                <label for="inputPassword6" class="col-form-label">Correo:</label>
-            </div>
-            <div class="col-auto">
-                <input type="email" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                <label for="inputPassword6" class="col-form-label">Correo: {{cliente?.idPersona?.correo}}</label>
             </div>
         </div>
         <div class="row g-2 align-items-center">
             <div class="col-auto label-info">
-                <label for="inputPassword6" class="col-form-label">Edad:</label>
-            </div>
-            <div class="col-auto">
-                <input type="number" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                <label for="inputPassword6" class="col-form-label">Fecha de nacimiento: {{cliente?.idPersona?.fechaNacimiento}}</label>
             </div>
         </div>
         <div class="row g-2 align-items-center">
             <div class="col-auto label-info">
-                <label for="inputPassword6" class="col-form-label">Estatura:</label>
-            </div>
-            <div class="col-auto">
-                <input type="number" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                <label for="inputPassword6" class="col-form-label">Estatura: {{cliente?.idPersona?.estatura}}</label>
             </div>
         </div>
     </div>
@@ -45,20 +33,12 @@
 <div class="container d-flex justify-content-center">
     <div class="row g-2 align-items-center label-peso">
         <div class="col-auto  label-info">
-            <label for="inputPassword6" class="col-form-label">Peso:</label>
-        </div>
-        <div class="col-auto">
-            <input type="number" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+            <label for="inputPassword6" class="col-form-label">Peso: {{cliente?.idPersona?.peso}}</label>
         </div>
     </div>
     <div class="row g-2 align-items-center abajo">
         <div class="col-auto">
-            <label for="inputPassword6" class="col-form-label">Entrenador actual:</label>
-        </div>
-        <div class="col-auto">
-            <span id="passwordHelpInline" class="form-text">
-                Andres Estaba Rodrigues Marquez
-            </span>
+            <label for="inputPassword6" class="col-form-label">Entrenador actual:  {{cliente?.entrenador?.idPersona?.nombre}} {{cliente?.entrenador?.idPersona?.apellido}}</label>
         </div>
     </div>
 
@@ -66,7 +46,7 @@
 <div class="container d-flex justify-content-center">
     <div class="form-floating w-2">
         <textarea class="form-control textarea" placeholder="Leave a comment here" id="floatingTextarea2"
-            style="height: 100px"></textarea>
+            style="height: 100px">{{cliente?.idPersona?.descripcion}}</textarea>
         <label for="floatingTextarea2">Descripcion personal</label>
     </div>
     <div>
@@ -74,7 +54,7 @@
             <button type="button" class="btn btn-primary btn-actualizar">Actualizar informacion</button>
         </li>
         <li class="btn-perfil">
-            <button type="button" class="btn btn-primary close">Cerrar seccion</button>
+            <button type="button" class="btn btn-primary close" (click)="cerraSeccion()">Cerrar seccion</button>
         </li>
     </div>
 </div>

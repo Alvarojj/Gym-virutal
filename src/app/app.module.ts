@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import{HttpClientModule}from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,8 @@ import { SeleccionaVideoComponent } from './componentes/entrenadores/selecciona-
 import { InicioEntrenadoresComponent } from './componentes/entrenadores/inicio-entrenadores/inicio-entrenadores.component';
 import { LoginEntrenadoresComponent } from './componentes/entrenadores/login-entrenadores/login-entrenadores.component';
 import { RegistrarEntrenadorComponent } from './componentes/entrenadores/registrar-entrenador/registrar-entrenador.component';
+
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -43,7 +46,9 @@ import { RegistrarEntrenadorComponent } from './componentes/entrenadores/registr
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
