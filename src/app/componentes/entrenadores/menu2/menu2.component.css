@@ -1,0 +1,21 @@
+.title-logo{
+    margin-top: 10px;
+}
+.navbar-brand{
+    margin-left: 50px;
+}
+.list-menu{
+    margin-right: 50px;
+}
+.nav-item{
+    margin-right: 40px;
+    
+}
+.nav-item a{
+    color: black;
+}
+.btn-primary{
+    background-color: #7C3213;
+    border: none;
+    border-radius: 15px;
+}

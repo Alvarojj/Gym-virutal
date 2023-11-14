@@ -1,0 +1,49 @@
+.superior{
+    margin-bottom: 30px;
+}
+.change-foto{
+    margin-left: 130px;
+    color: #7C3213;
+}
+.img img{
+    width: 350px;
+    height: 350px;
+}
+.infor{
+    margin-left: 30px;
+}
+.label-info{
+    width: 70px;
+}
+.row{
+    margin-top: 20px;
+}
+.label-peso{
+    margin-bottom: 50px;
+}
+.abajo{
+    margin-left:120px;
+    margin-bottom: 50px;
+}
+
+.textarea{
+    width: 400px;
+    margin-right: 30px;
+}
+.btn-perfil{
+    text-decoration: none;
+    list-style: none;
+}
+.btn-primary{
+    background-color: #7C3213;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.btn-actualizar{
+    width: 320px;
+}
+.close{
+    width: 200px;
+    margin-left: 60px;
+}
