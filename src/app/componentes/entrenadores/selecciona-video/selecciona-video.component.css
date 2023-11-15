@@ -106,6 +106,7 @@
     border-radius: 15px;
     border: 1px solid #7c3213;
     background-color: #7C3213;
+    cursor: pointer;
 }
 
 .input input{

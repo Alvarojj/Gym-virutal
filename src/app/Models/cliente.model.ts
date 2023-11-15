@@ -31,3 +31,20 @@ export interface entrenador{
     idEntrenador?: number,
     idPersona?: persona
 }
+
+
+export interface video{
+    idVideo?:number,
+    path?:string,
+    id?:entrenador
+}
+
+
+export interface entrenamiento{
+    titulo?:string,
+    fechaEntreno?:string,
+    bitVisto?:number,
+    cliente?:cliente,
+    entrenador?:entrenador,
+    video?:video
+}

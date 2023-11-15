@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import{cliente, membresia, entrenador} from './../Models/cliente.model';
+import{cliente, membresia, entrenador, video, entrenamiento} from './../Models/cliente.model';
 import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
@@ -56,4 +56,29 @@ export class ClientesService {
     return this.httpClient.post<entrenador>(url,entrenador)
   }
 
+  crearVideo(video:video):Observable<video>{
+    const url = this.url + 'video';
+    return this.httpClient.post<video>(url, video)
+  }
+
+  obtenerVideos(entrenador:entrenador):Observable<video[]>{
+    const url = this.url + 'video/Entrenador';
+    return this.httpClient.post<video[]>(url, entrenador)
+  }
+
+  ObtenerClientesEntrenador(cliente:cliente):Observable<cliente[]>{
+    const url = this.url + 'cliente/entrenador';
+    return this.httpClient.post<cliente[]>(url,cliente)
+  }
+
+  crearEntrenamiento(entreno:entrenamiento):Observable<entrenamiento>{
+    const url = this.url + 'entrenamiento';
+    return this.httpClient.post<entrenamiento>(url,entreno)
+  }
+
+
+  obtenerEntrenamiento(entreno:entrenamiento):Observable<entrenamiento>{
+    const url = this.url + 'entrenamiento/cliente';
+    return this.httpClient.post<entrenamiento>(url,entreno)
+  }
 }
