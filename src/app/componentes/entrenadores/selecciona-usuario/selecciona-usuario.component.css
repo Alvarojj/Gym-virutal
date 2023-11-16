@@ -12,7 +12,7 @@
 }
 
 .container{
-    width: 100%;
+    width: 300px;
     display: flex;
     margin: auto;
     max-width: 1100px;

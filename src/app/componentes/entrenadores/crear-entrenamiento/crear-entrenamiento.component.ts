@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ClientesService } from 'src/app/services/clientes.service';
 import { DatosService } from 'src/app/services/datos.service';
 
@@ -8,7 +9,7 @@ import { DatosService } from 'src/app/services/datos.service';
   styleUrls: ['./crear-entrenamiento.component.css']
 })
 export class CrearEntrenamientoComponent implements OnInit {
-  constructor(private serviceDato: DatosService, private servicioCliente:ClientesService) { }
+  constructor(private serviceDato: DatosService, private servicioCliente:ClientesService, private router:Router) { }
   ngOnInit(): void {
       console.log(this.serviceDato.idVideo)
       if(this.serviceDato.idVideo > 0){
@@ -51,6 +52,6 @@ export class CrearEntrenamientoComponent implements OnInit {
       })
 
     }
-
+    this.router.navigate(['/inicio/entrenador'])
   }
 }
