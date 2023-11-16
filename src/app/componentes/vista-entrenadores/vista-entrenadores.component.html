@@ -4,42 +4,19 @@
   
   
   <div class="container">
-    <div class="card">
+    <div class="card" *ngFor="let entrenador of entrenadores">
       <figure>
         <img src="./../../../assets/mejor-entrenador-personal-online3 (1).jpg">
       </figure>
       <div class="contenido">
-        <h3>Juan Camilo <br> 22 años</h3>
+        <h3>{{entrenador.idPersona?.nombre}} {{entrenador.idPersona?.apellido}} <br> {{entrenador.idPersona?.fechaNacimiento}}</h3>
         <p>
-          Juancho Camilo es un entrenador fisico de alto nivel, enseñando tecnicas a nivel nacional y internacional.
+          {{entrenador.idPersona?.descripcion}}
         </p>
-        <a routerLink="/Selecciona_plan">SELECCIONAR</a>
+        <a (click)="seleccionaEntrenador(entrenador.idEntrenador)" >SELECCIONAR</a>
       </div>
     </div>
-    <div class="card">
-      <figure>
-        <img src="./../../../assets/entrenador.webp">
-      </figure>
-      <div class="contenido">
-        <h3>Andres Santos <br> 29 años</h3>
-        <p>
-          Andres Santos, busca de oportunidades como entrenador personal, destacado por su amplio conocimiento en el campus.
-        </p>
-        <a routerLink="/Selecciona_plan">SELECCIONAR</a>
-      </div>
-    </div>
-    <div class="card">
-      <figure>
-        <img src="./../../../assets/entredar.jpg">
-      </figure>
-      <div class="contenido">
-        <h3>Marcos Hernandez <br> 53 años</h3>
-        <p>
-          Marcos Hernandez, es el entrenador mas experimentado con el que contamos, teniendo mas de 30 años de experiencia
-        </p>
-        <a routerLink="/Selecciona_plan">SELECCIONAR</a>
-      </div>
-    </div>
+
     
     
   </div>

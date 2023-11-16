@@ -1,6 +1,3 @@
-
-
-
 *{
     margin: 0;
     padding: 0;
@@ -15,10 +12,11 @@
 }
 
 .container{
-    width: 100%;
+    width: 300px;
     display: flex;
     margin: auto;
     max-width: 1100px;
+    margin-top: 100px;
     
     
 }
@@ -44,6 +42,20 @@
 .card img{
     width: 100%;
     height: 210px;
+}
+
+.btn-primary{
+    background-color: #7C3213;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.boton{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    max-width: 300px;
 }
 
 .card .contenido{
@@ -72,10 +84,3 @@
     border: 1px solid #7c3213;
     background-color: white;
 }
-
-
-
-
-
-
-

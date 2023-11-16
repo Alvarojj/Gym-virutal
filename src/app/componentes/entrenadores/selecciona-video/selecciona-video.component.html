@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="card" *ngFor="let video of videos">
+    <iframe width="320px" height="210px" [src]='transform(video.path)'
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <div class="contenido">
+      <a (click)="videoSeleccionado(video.idVideo)">SELECCIONAR VIDEO</a>
+    </div>
+  </div>
+</div>
+
+
+
+<br>
+<br>
+<br>
+<div class="agregar">
+  <div class="input">
+    <span class="details">CREA UN VIDEO PARA TUS USUARIOS</span>
+    <input type="text" placeholder="URL" required [(ngModel)]="rutaVideo">
+  </div>
+  <div class="boton">
+    <a (click)="crearVideo()">CREAR VIDEO</a>
+  </div>
+</div>

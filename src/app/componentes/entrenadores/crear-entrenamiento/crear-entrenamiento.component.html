@@ -1,0 +1,57 @@
+<app-menu2></app-menu2>
+<body>
+    <div class="container2">
+        <div class="titulo">
+            <h1>COMPLETA LOS CAMPOS Y CREA TU ENTRENAMIENTO</h1>
+        </div>
+    
+        <br>
+        <br>
+    
+        <div class="preguntas">
+            <div class="input">
+                <span class="details">TITULO</span>
+                <input type="text" placeholder="TITULO" required [(ngModel)] = "titulo">
+            </div>
+            <div class="input">
+                <span class="details">FECHA</span>
+                <input type="text" placeholder="AAAA-MM-DD" required [(ngModel)] = "fecha">
+            </div>
+        </div>
+    
+        <br>
+        <br>
+        
+    
+        <div class="container">
+            <div class="card">
+                <h3>{{selec}}</h3>
+                <figure>
+                    <img src="./../../../../assets/imagenvideo.jpeg">
+                </figure>
+              <div class="contenido"> 
+                <a routerLink="/seleccionaVideo">SELECCIONAR UN VIDEO</a>
+              </div>
+
+            </div>
+            <div class="card">
+                <h3>{{selec2}}</h3>
+                <figure>
+                    <img src="./../../../../assets/imagenusuario.jpeg">
+                  </figure>
+              <div class="contenido"> 
+                <a routerLink="/seleccionaUsuario">SELECCIONAR UN USUARIO</a>
+              </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        
+        <div class="boton">
+        <li class="nav-item">
+            <button type="button" class="btn btn-primary" (click)="crearEntrenamiento()">CREAR ENTRENAMIENTO</button>
+        </li>
+        </div>
+    </div>
+    
+</body>
