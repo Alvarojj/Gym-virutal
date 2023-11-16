@@ -3,32 +3,13 @@
   
   
 <div class="container">
-    <div class="card">
+    <div class="card" *ngFor="let cliente of clientes">
         <figure>
             <img src="./../../../assets/entrenador.webp">
           </figure>
       <div class="contenido"> 
-        <h3>Juan Camilo <br> 22 años</h3>
-        <a routerLink="/Selecciona_plan">SELECCIONAR USUARIO</a>
+        <h3>{{cliente.idPersona?.nombre}} {{cliente.idPersona?.apellido}} <br> {{cliente.idPersona?.fechaNacimiento}}</h3>
+        <a (click)="seleccionarUsuario(cliente.idCliente)">SELECCIONAR USUARIO</a>
       </div>
     </div>
-    <div class="card">
-        <figure>
-            <img src="./../../../assets/mejor-entrenador-personal-online3 (1).jpg">
-          </figure>
-      <div class="contenido"> 
-        <h3>Juan Camilo <br> 22 años</h3>
-        <a routerLink="/Selecciona_plan">SELECCIONAR USUARIO</a>
-      </div>
-    </div>
-    <div class="card">
-        <figure>
-            <img src="./../../../assets/entredar.jpg">
-          </figure>
-      <div class="contenido"> 
-        <h3>Juan Camilo <br> 22 años</h3>
-        <a routerLink="/Selecciona_plan">SELECCIONAR USUARIO</a>
-      </div>
-    </div>
-    
 </div>

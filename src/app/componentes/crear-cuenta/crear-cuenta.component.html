@@ -6,7 +6,7 @@
         </figure>
     </div>
     
-    <form action="#" class="formulario">
+    <div action="#" class="formulario">
 
         
 
@@ -18,42 +18,42 @@
             <div class="pregunta1">
                 <div class="input">
                     <span class="details">Nombre</span>
-                    <input type="text" placeholder="" required>
+                    <input type="text" [(ngModel)] = "nombre" placeholder="" required>
                 </div>
                 <div class="input">
                     <span class="details">Apellido</span>
-                    <input type="text" placeholder="" required>
+                    <input type="text" placeholder="" [(ngModel)] = "apellido" required>
                 </div>
                 <div class="input">
                     <span class="details">Correo</span>
-                    <input type="text" placeholder="" required>
+                    <input type="text" placeholder="" [(ngModel)] = "correo" required>
                 </div>
                 <div class="input">
                     <span class="details">Descripcion personal</span>
-                    <textarea placeholder="" cols="21" rows="8" ></textarea>
+                    <textarea placeholder="" cols="21" rows="8" [(ngModel)] = "descripcion" ></textarea>
                 </div>
             </div>
             <div class="pregunta2">
                 <div class="input">
                     <span class="details">Contraseña</span>
-                    <input type="password" placeholder="" required>
+                    <input type="password" placeholder="" [(ngModel)] = "contra1" required>
                 </div>
                 <div class="input">
                     <span class="details">Confirma tu contraseña</span>
-                    <input type="password" placeholder="" required>
+                    <input type="password" placeholder="" [(ngModel)] = "contra2" required>
                 </div>
                 <div class="input">
                     <span class="details">Fecha de nacimiento</span>
-                    <input type="text" placeholder="" required>
+                    <input type="text" placeholder=" Año-Mes-Día" [(ngModel)] = "fechaNa" required>
                 </div>
                 
                 <div class="input">
                     <span class="details">Peso en kilogramos</span>
-                    <input type="text" placeholder="" required>
+                    <input type="text" placeholder="" [(ngModel)] = "peso" required>
                 </div>
                 <div class="input">
                     <span class="details">Estatura en metros</span>
-                    <input type="text" placeholder="" required>
+                    <input type="text" placeholder="" [(ngModel)] = "estatura" required>
                 </div>
             </div>
         </div>
@@ -61,8 +61,8 @@
         
 
         <div class="boton">
-            <a routerLink="/entrenadores">SELECCIONAR ENTRENADOR</a>
+            <a (click)="crearCliente()">SELECCIONAR ENTRENADOR</a>
         </div>
 
-    </form>
+    </div>
 </div>

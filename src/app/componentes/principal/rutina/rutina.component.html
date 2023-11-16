@@ -1,11 +1,9 @@
 <app-menu></app-menu>
 <div class="container">
     <h2>Tu rutina agendada para el día de hoy es la siguiente:</h2>
-    <iframe width="1260" height="615" src="https://www.youtube.com/embed/Uh976n5NB_Q?si=tS89stcn25gF1BnO"
+    <h3>{{nohay}}</h3>
+    <iframe width="1260" height="615" [src]='transform(entreno?.video?.path)'
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
-    <div class="btn-div">
-        <button type="button" class="btn btn-primary">Iniciar rutina</button>
-    </div>
 </div>

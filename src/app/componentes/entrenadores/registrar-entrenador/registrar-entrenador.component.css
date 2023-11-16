@@ -48,6 +48,7 @@
     border: 1px solid #7c3213;
     background-color: #7c3213;
     margin-left: 65px;
+    cursor: pointer;
 }
 
 .container .imagen img{
